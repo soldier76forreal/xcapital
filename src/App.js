@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route , Redirect, Routes, useNavigate , Navigate} from "react-router-dom";
+import ShowPost from "./components/referenceRoutes/showPost";
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import { faCheckCircle, faUpload , faTimes , faStar ,faSearch , faPlus , faThumbsUp , faChevronLeft ,faChevronRight ,faExclamationCircle , faSignOutAlt , faFile , faUser  , faComments , faTags , faThumbsDown, faReply , faCaretDown , faQuestion , faCheck , faTimesCircle , faThLarge,  faTrashAlt , faEdit, faBars , faHeadset} from '@fortawesome/free-solid-svg-icons'
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
+import Main from "./components/referenceRoutes/main";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+          <Route path="/showPost" element={<ShowPost/>}></Route>
+          <Route path="/" element={<Main/>}></Route>
+
+    </Routes>
   );
 }
 

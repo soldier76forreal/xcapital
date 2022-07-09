@@ -1,0 +1,93 @@
+.btnExpandTextDiv{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    background-color: #191919;
+    border: #e6e6e61c 2px solid;
+    border-bottom: none;
+    padding: 12px 8px 12px 8px;
+    color: #e6e6e6;
+    text-align: right;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+.lectureInfo{
+    display: inline-block;
+    float: left;
+    margin-top: 3px;
+    font-size: 12px;
+}
+.lectureTitle{
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+}
+.lectureExpend{
+    display: inline-block;
+    background-color: #c2c2c2;
+
+    border-radius: 85px;
+    padding: 0px 2px 1px 2px;
+}
+
+.btnExpandTextDiv:hover{
+    background-color: #0000;
+
+}
+.lectureExpendedListDiv{
+    background-color: #0000;
+    z-index: 50;
+    margin-top: 10px;
+}
+.lectureExpendedListDiv ul{
+    list-style: none;
+}
+.expendedItemDiv{
+    color:#e6e6e6;
+}
+.expandexIcon{
+    display: inline-block;
+}
+.expandexTitle{
+    font-size: 14px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.expandexTime{
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 6px;
+
+}
+.rotateIn{
+   
+    animation: arrowUp ease-in-out 0.2s forwards;
+}
+.rotateOut{
+       
+
+    animation: arrowDown ease-in-out 0.2s forwards;
+
+}
+
+@keyframes arrowUp {
+    0% {
+       
+        transform:rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(180deg);
+    }
+}
+@keyframes arrowDown {
+    0% {
+        transform:rotate(180deg);
+    }
+
+    100% {
+        transform:rotate(0deg);
+    }
+}
